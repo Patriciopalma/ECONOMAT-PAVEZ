@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<rect width="640" height="640" fill="#FBF8F4"/>
+<rect x="0" y="0.0" width="640" height="106.7" fill="#D8B98A" opacity="0.85"/>
+<line x1="0" y1="0.0" x2="640" y2="0.0" stroke="#00000022" stroke-width="2"/>
+<rect x="0" y="106.7" width="640" height="106.7" fill="#C2A06E" opacity="0.85"/>
+<line x1="0" y1="106.7" x2="640" y2="106.7" stroke="#00000022" stroke-width="2"/>
+<rect x="0" y="213.3" width="640" height="106.7" fill="#D8B98A" opacity="0.85"/>
+<line x1="0" y1="213.3" x2="640" y2="213.3" stroke="#00000022" stroke-width="2"/>
+<rect x="0" y="320.0" width="640" height="106.7" fill="#C2A06E" opacity="0.85"/>
+<line x1="0" y1="320.0" x2="640" y2="320.0" stroke="#00000022" stroke-width="2"/>
+<rect x="0" y="426.7" width="640" height="106.7" fill="#D8B98A" opacity="0.85"/>
+<line x1="0" y1="426.7" x2="640" y2="426.7" stroke="#00000022" stroke-width="2"/>
+<rect x="0" y="533.3" width="640" height="106.7" fill="#C2A06E" opacity="0.85"/>
+<line x1="0" y1="533.3" x2="640" y2="533.3" stroke="#00000022" stroke-width="2"/><rect x="0" y="576" width="640" height="64" fill="#241F1A" opacity="0.55"/>
+<text x="24" y="610" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#fff">Terciado / Plywood</text>
+</svg>
