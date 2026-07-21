@@ -13,6 +13,7 @@ import DatoExperto from './pages/DatoExperto.jsx';
 import Contacto from './pages/Contacto.jsx';
 import Checkout from './pages/Checkout.jsx';
 import { PRODUCTS, HOME_TABS, formatCLP } from './data.js';
+import { maderaTextura, bodegaHero } from './assets.js';
 
 const WHATSAPP_NUMBER = '+56 9 1234 5678';
 const FEATURED_COUNT = 5;
@@ -95,7 +96,7 @@ export default function App() {
       hasBadge: !!p.badge,
       badgeLabel: p.badge === 'destacado' ? 'Destacado' : p.badge === 'mas-vendido' ? 'Más vendido' : p.badge === 'oferta' ? 'Oferta' : '',
       qty: getQty(p.id),
-      gallery: [p.image, '/assets/madera-textura.svg', '/assets/bodega-hero.svg'],
+      gallery: [p.image, maderaTextura, bodegaHero],
       inc: () => incQty(p.id),
       dec: () => decQty(p.id),
       add: () => addToCart(p.id),

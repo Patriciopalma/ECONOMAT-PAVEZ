@@ -1,8 +1,13 @@
+import {
+  terciadoPlywood, construccionCemento, ferreteriaTornillos, terminacionesPinturas,
+  mdfStack, melaminaBlanca, pinoCepillado, maderaTextura,
+} from './assets.js';
+
 export const FAMILY_IMG = {
-  maderas: '/assets/terciado-plywood.svg',
-  construccion: '/assets/construccion-cemento.svg',
-  ferreteria: '/assets/ferreteria-tornillos.svg',
-  terminaciones: '/assets/terminaciones-pinturas.svg',
+  maderas: terciadoPlywood,
+  construccion: construccionCemento,
+  ferreteria: ferreteriaTornillos,
+  terminaciones: terminacionesPinturas,
 };
 
 export const FAMILY_NAMES = {
@@ -46,15 +51,15 @@ export const FILTERS = {
 };
 
 export const PRODUCTS = [
-  { id: 'terciado', name: 'Terciado estructural', family: 'maderas', category: 'Maderas y tableros', spec: '18 mm · 122x244 cm', price: 24990, unit: '/unidad', image: '/assets/terciado-plywood.svg', mode: 'compra', dimensionado: true, badge: 'destacado', sku: 'TCE-1822', desc: 'Terciado estructural de pino radiata, ideal para tabiques, moldajes y estructuras que requieren resistencia. Disponible para corte a la medida que necesites.' },
-  { id: 'mdf', name: 'MDF', family: 'maderas', category: 'Maderas y tableros', spec: '15 mm · 122x244 cm', price: 18490, unit: '/unidad', image: '/assets/mdf-stack.svg', mode: 'compra', dimensionado: true, badge: 'destacado', sku: 'MDF-1522', desc: 'Tablero MDF de densidad media, superficie lisa ideal para muebles, repisas y proyectos de carpintería fina.' },
-  { id: 'melamina', name: 'Melamina blanca', family: 'maderas', category: 'Maderas y tableros', spec: '18 mm · 183x275 cm', price: 25990, unit: '/unidad', image: '/assets/melamina-blanca.svg', mode: 'compra', dimensionado: true, badge: 'mas-vendido', sku: 'MEL-1827', desc: 'Tablero melamínico blanco, terminación uniforme para closets, muebles de cocina y proyectos de mueblería.' },
-  { id: 'pino', name: 'Pino cepillado', family: 'maderas', category: 'Maderas y tableros', spec: '2x3" (45x70 mm) · 3,2 m', price: 2890, unit: '/unidad', image: '/assets/pino-cepillado.svg', mode: 'compra', dimensionado: false, badge: 'mas-vendido', sku: 'PIN-2345', desc: 'Madera de pino cepillado, seca, ideal para estructuras livianas, moldajes y trabajos de carpintería general.' },
-  { id: 'moldura', name: 'Moldura de pino', family: 'maderas', category: 'Molduras', spec: '1x2" · perfil recto', price: null, unit: '', image: '/assets/pino-cepillado.svg', mode: 'cotizar', dimensionado: false, badge: '', sku: 'MOL-1002', desc: 'Moldura de pino para terminaciones interiores. Precio sujeto a disponibilidad y cantidad requerida.' },
-  { id: 'tornillos', name: 'Tornillo para madera', family: 'ferreteria', category: 'Ferretería', spec: '6x1 1/2" · 100 unid.', price: 2990, unit: '/caja', image: '/assets/ferreteria-tornillos.svg', mode: 'compra', dimensionado: false, badge: 'destacado', sku: 'TOR-6112', desc: 'Tornillos para madera de acero zincado, cabeza plana, ideales para ensambles y fijaciones generales.' },
-  { id: 'adhesivo', name: 'Adhesivo de montaje', family: 'ferreteria', category: 'Adhesivos y selladores', spec: '400 g', price: 3490, unit: '/unidad', image: '/assets/terminaciones-pinturas.svg', mode: 'compra', dimensionado: false, badge: '', sku: 'ADH-0400', desc: 'Adhesivo de montaje de alta adherencia para madera, tableros y superficies de construcción.' },
-  { id: 'barniz', name: 'Barniz para exterior', family: 'terminaciones', category: 'Terminaciones', spec: '1 galón', price: null, unit: '', image: '/assets/terminaciones-pinturas.svg', mode: 'cotizar', dimensionado: false, badge: 'oferta', sku: 'BAR-1EXT', desc: 'Barniz protector para madera de uso exterior. Consulta color y rendimiento con nuestro equipo.' },
-  { id: 'cemento', name: 'Cemento y mortero', family: 'construccion', category: 'Construcción', spec: 'Saco 25 kg', price: null, unit: '', image: '/assets/construccion-cemento.svg', mode: 'consultar', dimensionado: false, badge: '', sku: 'CEM-025K', desc: 'Cemento para obra gruesa. Disponibilidad sujeta a stock; consulta cantidad y despacho.' },
+  { id: 'terciado', name: 'Terciado estructural', family: 'maderas', category: 'Maderas y tableros', spec: '18 mm · 122x244 cm', price: 24990, unit: '/unidad', image: terciadoPlywood, mode: 'compra', dimensionado: true, badge: 'destacado', sku: 'TCE-1822', desc: 'Terciado estructural de pino radiata, ideal para tabiques, moldajes y estructuras que requieren resistencia. Disponible para corte a la medida que necesites.' },
+  { id: 'mdf', name: 'MDF', family: 'maderas', category: 'Maderas y tableros', spec: '15 mm · 122x244 cm', price: 18490, unit: '/unidad', image: mdfStack, mode: 'compra', dimensionado: true, badge: 'destacado', sku: 'MDF-1522', desc: 'Tablero MDF de densidad media, superficie lisa ideal para muebles, repisas y proyectos de carpintería fina.' },
+  { id: 'melamina', name: 'Melamina blanca', family: 'maderas', category: 'Maderas y tableros', spec: '18 mm · 183x275 cm', price: 25990, unit: '/unidad', image: melaminaBlanca, mode: 'compra', dimensionado: true, badge: 'mas-vendido', sku: 'MEL-1827', desc: 'Tablero melamínico blanco, terminación uniforme para closets, muebles de cocina y proyectos de mueblería.' },
+  { id: 'pino', name: 'Pino cepillado', family: 'maderas', category: 'Maderas y tableros', spec: '2x3" (45x70 mm) · 3,2 m', price: 2890, unit: '/unidad', image: pinoCepillado, mode: 'compra', dimensionado: false, badge: 'mas-vendido', sku: 'PIN-2345', desc: 'Madera de pino cepillado, seca, ideal para estructuras livianas, moldajes y trabajos de carpintería general.' },
+  { id: 'moldura', name: 'Moldura de pino', family: 'maderas', category: 'Molduras', spec: '1x2" · perfil recto', price: null, unit: '', image: pinoCepillado, mode: 'cotizar', dimensionado: false, badge: '', sku: 'MOL-1002', desc: 'Moldura de pino para terminaciones interiores. Precio sujeto a disponibilidad y cantidad requerida.' },
+  { id: 'tornillos', name: 'Tornillo para madera', family: 'ferreteria', category: 'Ferretería', spec: '6x1 1/2" · 100 unid.', price: 2990, unit: '/caja', image: ferreteriaTornillos, mode: 'compra', dimensionado: false, badge: 'destacado', sku: 'TOR-6112', desc: 'Tornillos para madera de acero zincado, cabeza plana, ideales para ensambles y fijaciones generales.' },
+  { id: 'adhesivo', name: 'Adhesivo de montaje', family: 'ferreteria', category: 'Adhesivos y selladores', spec: '400 g', price: 3490, unit: '/unidad', image: terminacionesPinturas, mode: 'compra', dimensionado: false, badge: '', sku: 'ADH-0400', desc: 'Adhesivo de montaje de alta adherencia para madera, tableros y superficies de construcción.' },
+  { id: 'barniz', name: 'Barniz para exterior', family: 'terminaciones', category: 'Terminaciones', spec: '1 galón', price: null, unit: '', image: terminacionesPinturas, mode: 'cotizar', dimensionado: false, badge: 'oferta', sku: 'BAR-1EXT', desc: 'Barniz protector para madera de uso exterior. Consulta color y rendimiento con nuestro equipo.' },
+  { id: 'cemento', name: 'Cemento y mortero', family: 'construccion', category: 'Construcción', spec: 'Saco 25 kg', price: null, unit: '', image: construccionCemento, mode: 'consultar', dimensionado: false, badge: '', sku: 'CEM-025K', desc: 'Cemento para obra gruesa. Disponibilidad sujeta a stock; consulta cantidad y despacho.' },
 ];
 
 export const HOME_TABS = {
@@ -64,12 +69,12 @@ export const HOME_TABS = {
 };
 
 export const ARTICLES = [
-  { title: 'Cómo elegir el tablero correcto para tu proyecto', img: '/assets/mdf-stack.svg' },
-  { title: 'Diferencias entre MDF, OSB y terciado', img: '/assets/terciado-plywood.svg' },
-  { title: 'Cómo calcular los materiales para tu proyecto', img: '/assets/pino-cepillado.svg' },
-  { title: 'Cómo proteger la madera de exterior', img: '/assets/terminaciones-pinturas.svg' },
-  { title: 'Cómo reducir el desperdicio al dimensionar', img: '/assets/madera-textura.svg' },
-  { title: 'Qué tornillos usar para madera', img: '/assets/ferreteria-tornillos.svg' },
+  { title: 'Cómo elegir el tablero correcto para tu proyecto', img: mdfStack },
+  { title: 'Diferencias entre MDF, OSB y terciado', img: terciadoPlywood },
+  { title: 'Cómo calcular los materiales para tu proyecto', img: pinoCepillado },
+  { title: 'Cómo proteger la madera de exterior', img: terminacionesPinturas },
+  { title: 'Cómo reducir el desperdicio al dimensionar', img: maderaTextura },
+  { title: 'Qué tornillos usar para madera', img: ferreteriaTornillos },
 ];
 
 export const TESTIMONIALS = [

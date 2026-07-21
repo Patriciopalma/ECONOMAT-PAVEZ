@@ -1,5 +1,6 @@
 import ProductCard from '../components/ProductCard.jsx';
 import { FAMILY_KEYS, FAMILY_NAMES, FAMILY_IMG, HOME_FEATURES, VALUE_PROPS, BRANDS, TESTIMONIALS } from '../data.js';
+import { bodegaHero } from '../assets.js';
 
 const TABS_BASE = { padding: '12px 4px', fontWeight: 700, fontSize: 14.5, cursor: 'pointer', borderBottom: '3px solid transparent' };
 function tabStyle(active) {
@@ -10,7 +11,7 @@ export default function Home({ goCatalogo, goCotizacion, goCategoria, goDatoExpe
   return (
     <div>
       <div style={{ position: 'relative', background: '#161310', minHeight: 480, display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-        <img src="/assets/bodega-hero.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55 }} />
+        <img src={bodegaHero} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55 }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg,rgba(10,10,8,.92),rgba(10,10,8,.55) 55%,rgba(10,10,8,.25))' }} />
         <div className="pv-container" style={{ position: 'relative', padding: '56px 24px', display: 'flex', gap: 40, width: '100%' }}>
           <div style={{ flex: 1, maxWidth: 600 }}>

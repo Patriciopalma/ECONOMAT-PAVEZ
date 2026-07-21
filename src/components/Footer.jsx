@@ -1,11 +1,12 @@
 import { FAMILY_KEYS, FAMILY_NAMES } from '../data.js';
+import { logoPavez } from '../assets.js';
 
 export default function Footer({ whatsappDisplay, goCategoria, goDimensionado, goCotizacion, goEmpresas, goDatoExperto }) {
   return (
     <div style={{ background: '#161310', color: '#cfc9bf', padding: '48px 24px 0' }}>
       <div className="pv-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 32, paddingBottom: 36, borderBottom: '1px solid #33302a' }}>
         <div>
-          <img src="/assets/logo-pavez.svg" alt="Pavez Economat" style={{ height: 32, marginBottom: 14 }} />
+          <img src={logoPavez} alt="Pavez Economat" style={{ height: 32, marginBottom: 14 }} />
           <div style={{ fontSize: 13, lineHeight: 1.7 }}>
             Rancagua, Región de O'Higgins<br />Lunes a viernes, 9:00–18:30<br />{whatsappDisplay}<br />contacto@pavezeconomat.cl
           </div>

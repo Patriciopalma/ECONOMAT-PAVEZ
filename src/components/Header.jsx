@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FAMILY_KEYS, FAMILY_NAMES, SUBCATS } from '../data.js';
+import { logoPavez } from '../assets.js';
 
 export default function Header({ whatsappDisplay, goHome, goCuenta, goCategoria, goOfertas, goDimensionado, goEmpresas, goDatoExperto, goContacto, goCotizacion, toggleCart, cartCount, cartSubtotalF }) {
   const [megaFamily, setMegaFamily] = useState(null);
@@ -20,7 +21,7 @@ export default function Header({ whatsappDisplay, goHome, goCuenta, goCategoria,
 
       <div className="pv-container" style={{ padding: '14px 24px', display: 'flex', alignItems: 'center', gap: 24 }}>
         <div onClick={goHome} style={{ cursor: 'pointer', flex: '0 0 auto' }}>
-          <img src="/assets/logo-pavez.svg" alt="Pavez Economat" style={{ height: 40, display: 'block' }} />
+          <img src={logoPavez} alt="Pavez Economat" style={{ height: 40, display: 'block' }} />
         </div>
         <div className="pv-search-bar" style={{ flex: 1, display: 'flex', maxWidth: 640, border: '2px solid #1B6B3C', borderRadius: 8, overflow: 'hidden' }}>
           <input placeholder="¿Qué necesitas para tu proyecto?" style={{ flex: 1, border: 'none', outline: 'none', padding: '11px 14px', fontSize: 14 }} />
